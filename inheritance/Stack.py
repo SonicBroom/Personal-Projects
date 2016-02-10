@@ -19,9 +19,13 @@ myStack.push(1)
 myStack.push(2)
 myStack.push(3)
 
+myStack.push(4)
+
 print ("1st Popped number: ", myStack.pop())
 print ("2nd Popped number: ", myStack.pop())
 print ("3rd Popped number: ", myStack.pop())
+
+print ("4th Popped number: ", myStack.pop())
 
 
 
