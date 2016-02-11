@@ -30,7 +30,7 @@ class BMW(Car):
         self.myColor = color
 
 myCar = BMW()
-myCar.carSteeringWheel.turnWheel(45)
+myCar.carSteeringWheel.turnWheel(90)
 
 print ("Car Steering wheel angle: ", myCar.carSteeringWheel.getWheelAngle())
 
