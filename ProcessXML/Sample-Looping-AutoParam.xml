@@ -1,0 +1,60 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><run id="4792">
+  <description>Sample looping XML using automatic parameters</description>
+  <edition>StarterSDK</edition>
+  <edition>PremiumSDK</edition>
+  <step>
+    <group>MainApp</group>
+    <action>open</action>
+    <value1>Routing</value1>
+    <value2/>
+    <expected/>
+    <description/>
+  </step>
+  <loop repeat="2">
+      <step>
+        <group>Route</group>
+        <action autoParam="RouteCoordinates">addCoordinate</action>
+        <value1></value1>
+        <value2></value2>
+        <expected/>
+        <description/>
+      </step>
+      <loop repeat="3">
+          <step>
+            <group>Route</group>
+            <action autoParam="RouteCoordinates">addCoordinate</action>
+            <value1></value1>
+            <value2></value2>
+            <expected/>
+            <description/>
+          </step>
+      </loop>
+  </loop>
+  <loop repeat="2">
+      <step>
+        <group>Route</group>
+        <action autoParam="RouteOption">addRouteOption</action>
+        <value1></value1>
+        <value2></value2>
+        <expected/>
+        <description/>
+      </step>
+  </loop>
+  <step>
+    <group>Route</group>
+    <action autoParam="RouteMode">calculateRoute</action>
+    <value1></value1>
+    <value2/>
+    <expected/>
+    <description/>
+  </step>
+  <step>
+    <group>MainApp</group>
+    <action>getScreenShot</action>
+    <value1/>
+    <value2/>
+    <expected/>
+    <description/>
+  </step>
+</run>
